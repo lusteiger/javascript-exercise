@@ -11,7 +11,7 @@ export default class Teacher extends Person {
   introduce() {
     const { klass } = this;
     const personIntroduce = super.introduce();
-    const klassIntroduce = klass != undefined ? `Class ${klass}` : `No Class`;
+    const klassIntroduce = klass !== undefined ? `Class ${klass}` : `No Class`;
     return `${personIntroduce} I am a Teacher. I teach ${klassIntroduce}.`;
   }
 }
