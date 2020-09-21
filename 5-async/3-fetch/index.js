@@ -2,6 +2,8 @@ function fetchData(url) {
   // <-- start
   // TODO 23: 通过Fetch API实现异步请求
   // end -->
+
+  return fetch(url).then(response => response.json());
 }
 
 const URL = 'http://localhost:3000/api';
